@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p>
+    <h1></h1>
+    <a href="/add">adicionar</a>
+</p>
+<table>
+    <tr>
+        <th>id</th>
+        <th>nome</th>
+        <th>Email</th>
+        <th>senha</th>
+        <th>foto</th>
+        <th>editar</th>
+        <th>deletar</th>
+    </tr>
+    <% Usuarios.forEach(function (usuario){ %>
+    <tr>
+            <td><%=usuario.id%> </td>
+            <td><%=usuario.nome%> </td>
+            <td><%=usuario.email%> </td>
+            <td><%=usuario.senha%> </td>
+            <td><%=usuario.foto%> </td>
+            <td><%=usuario.id%> </td>
+            <td><%=usuario.id%> </td>
+            <td>
+                <a href="/del/<%=usuario.id%>"> deletar</a>
+            </td>
+            <td>
+                <a href="/del/<%=usuario.id%>"> deletar</a>
+            </td>
+    </tr>
+    <% }) %>
+</table>
+</body>
+</html>
