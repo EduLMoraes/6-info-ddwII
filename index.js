@@ -9,7 +9,7 @@ app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
-require("./src/config/database.js");
+require("./config/database.js");
 
 app.get("/add", function(req,res){
   res.render("add.ejs",{});
@@ -30,7 +30,7 @@ app.get("/", async function (req, res) {
 app.get("/del/:id", async function (req, res) {
     let usuario = Usuario.findByPk(req.params.id);
     await usuario.destroy();
-    res.redirect("/");
+    res.redirect("/add");
 });
 
 app.listen('3000', function () {
