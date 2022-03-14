@@ -1,14 +1,18 @@
 # Custom Dictionary Words
+Adcionar
 Adicionar
 conexao
+deletando
 deletar
 Digite
 editar
 Enviar
 foto
 funcionando
+pesquisar
 repete
 senha
+tabela
 Usuario
 Usuário
 usuarios
