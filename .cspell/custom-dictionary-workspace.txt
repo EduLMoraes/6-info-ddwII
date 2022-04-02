@@ -1,4 +1,6 @@
 # Custom Dictionary Words
+abre
+abrir
 Adcionar
 Adicionar
 conexao
@@ -9,10 +11,13 @@ editar
 Enviar
 foto
 funcionando
+listar
+Pesquisa
 pesquisar
 repete
 senha
 tabela
+todos
 Usuario
 Usuário
 usuarios
